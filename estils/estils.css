@@ -70,3 +70,42 @@ body{
         }
     
 
+    /* PAGUINA PRINCIPAL */
+
+    section{
+        padding: 160px 15% 120px;
+    }
+
+    .home{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-image: url(../imatges/background2.jpg);
+        background-size: cover;
+        /* background-position: center; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hometext{
+        background-color:#1f7976;
+        padding: 70px;
+        letter-spacing: 3px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hometext h1{
+        font-size: 96px;
+        font-weight: lighter;
+        align-items: center;
+    }
+
+    .hometext h2{
+        /* CENTRAR */
+        margin-left: 120px;
+        /* ############## */
+        align-items: center;
+    }
+

@@ -39,6 +39,12 @@ body{
         transition: all .45s ease;
     }
 
+    header.sticky{
+        background: var(--bg-color);
+        border-bottom: 1px solid #ffffff1a;
+        padding: 12px 15%;
+    }
+
     .logo{
         color: var(--text-color);
         font-size: 35px;

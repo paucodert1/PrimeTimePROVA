@@ -96,16 +96,63 @@ body{
         align-items: center;
     }
 
-    .hometext h1{
-        font-size: 96px;
-        font-weight: lighter;
+        .hometext h1{
+            font-size: 96px;
+            font-weight: lighter;
+            align-items: center;
+        }
+
+        .hometext h2{
+            /* CENTRAR */
+            margin-left: 120px;
+            /* ############## */
+            align-items: center;
+        }
+
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        gap: 1.5rem;
     }
 
-    .hometext h2{
-        /* CENTRAR */
-        margin-left: 120px;
-        /* ############## */
-        align-items: center;
-    }
+        .about-img img{
+            max-width: 530px;
+            height: auto;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .about-text h2{
+            font-size: var(--h2-font);
+            line-height: 1;
+        }
+        .about-text h4{
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 15px 0 30px;
+        }
+        .about-text p{
+            color: var(--second-color);
+            font-size: var(--p-font);
+            line-height: 1.8;
+            margin-bottom: 4rem;
+        }
 
+    .btn{
+        display: inline-block;
+        padding: 12px 28px;
+        background: var(--main-color);
+        border-radius: 5px;
+        color: var(--text-color);
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: all .45s ease;
+    }
+    
+        .btn:hover{
+            transform: scale(0.9);
+        }
+    

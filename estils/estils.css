@@ -17,6 +17,9 @@
 	--big-font: 5rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
+    --dark-bg:rgba(0,0,0,0.9);
+    --light-bg:rgba(255,255,255,0.1);
+    --text:rgba(255,255,255,0.9);
 }
 
 body{
@@ -184,6 +187,7 @@ body{
     .main-text h2{
         font-size: var(--h2-font);
         line-height: 1;
+        font-weight: 900;
     }
 
 .services-content{
@@ -307,6 +311,74 @@ body{
     .row:hover .layer{
         height: 100%;
     }
+
+    /* TAULA DE PREUS */
+
+.table{
+    background: var(--second-bg-color);
+}
+
+   table{
+    /* margin-top: 5rem; */
+    width: 100%;
+    table-layout: fixed;
+   }
+
+        .table-header{
+            margin-top: 5rem;
+            background-color: var(--light-bg);
+        }
+
+        .table-content{
+            background-color: var(--light-bg, 10%);
+            height: 400px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            /* margin-top: 0;
+            border: 1px solid rgba(255, 255, 255, 0.3); */
+        }
+
+   th{
+    background-color: var(--light-bg);
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+   }
+
+   tr{
+    border-top: 1px solid var(--light-bg,100%);
+
+   }
+
+        tr:hover{
+            background: var(--bg-color, 90%);
+        }
+
+   td{
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    border-bottom:solid 1px rgba(255, 255, 255, 0.1); 
+   }
+
+   /* SCROLL CANVIAT  */
+
+   ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  ::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(238, 236, 236, 0.3);
+  }
+  
     
 
 
